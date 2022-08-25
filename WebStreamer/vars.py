@@ -7,18 +7,18 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Var(object):
-    API_ID = int(getenv('API_ID'))
-    API_HASH = str(getenv('API_HASH'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN'))
-    SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
-    WORKERS = int(getenv('WORKERS', '3'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', None))     
-    PORT = int(getenv('PORT', 8080))
-    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-    HAS_SSL = getenv('HAS_SSL', False)
+    API_ID = int(('API_ID'))
+    API_HASH = str(('API_HASH'))
+    BOT_TOKEN = str(('BOT_TOKEN'))
+    SLEEP_THRESHOLD = int(('SLEEP_THRESHOLD', '60'))
+    WORKERS = int(('WORKERS', '3'))
+    BIN_CHANNEL = int(('BIN_CHANNEL', None))     
+    PORT = int(('PORT', 8080))
+    BIND_ADRESS = str(('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
+    HAS_SSL = ('HAS_SSL', False)
     HAS_SSL = True if HAS_SSL.lower() == 'true' else False
     # OWNER_ID = int(getenv('OWNER_ID')) #TODO
-    NO_PORT = getenv('NO_PORT', False)
+    NO_PORT = ('NO_PORT', False)
     NO_PORT = True if NO_PORT.lower() == 'true' else False
     if 'DYNO' in environ:
         ON_HEROKU = True
