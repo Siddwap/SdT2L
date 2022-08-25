@@ -7,12 +7,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Var(object):
-    API_ID = int(('API_ID'))
-    API_HASH = str(('API_HASH'))
-    BOT_TOKEN = str(('BOT_TOKEN'))
+    API_ID = int(('8087060'))
+    API_HASH = str(('ead24e1abe37e9a80b16ef0f468350b6'))
+    BOT_TOKEN = str(('5723710010:AAH57aNzcpjebJU31_7vlrNEZPlBKSu3Ujo'))
     SLEEP_THRESHOLD = int(('SLEEP_THRESHOLD', '60'))
     WORKERS = int(('WORKERS', '3'))
-    BIN_CHANNEL = int(('BIN_CHANNEL', None))     
+    BIN_CHANNEL = int(('-1001161191495', None))     
     PORT = int(('PORT', 8080))
     BIND_ADRESS = str(('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     HAS_SSL = ('HAS_SSL', False)
